@@ -4,10 +4,7 @@
         <div class="container">
             <div class="row gy-2">
                 <div class="col-lg-12 text-center" data-aos="zoom-out">
-                    <h1>Seja bem-vindo!</h1>
-                    <p>
-                        Venha fazer parte do futuro de Frutal
-                    </p>
+                    <h1>Bem-vindo ao futuro de Frutal!</h1>
                 </div>
             </div>
         </div>
@@ -15,7 +12,7 @@
     <!-- /Hero Section -->
 
     <!-- About Section -->
-    <section id="sobre" class="section">
+    <section id="sobre" class="section mt-4">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
             <h2 class="col-lg-8 col-md-12 offset-lg-2 offset-md-0">Conselho de Desenvolvimento Econômico e
@@ -26,43 +23,55 @@
             <div class="row gy-2">
                 <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="100">
                     <p class="text-center">
-                        O Conselho de Desenvolvimento Econômico e Sustentável de Frutal (CODESF) promove o
-                        crescimento sustentável e a melhoria da qualidade de vida em Frutal. Cooperamos com
-                        empresas, instituições e a comunidade para desenvolver projetos e políticas que impulsionem
-                        o desenvolvimento econômico e social da nossa região.
+                        O Conselho de Desenvolvimento Econômico e Sustentável de Frutal (CODESF) é uma associação sem
+                        fins lucrativo que se constitui por mais de 40 entidades representativas do município.
+                        Foi criado em 2024, com a finalidade de discutir soluções estratégicas em desenvolvimento
+                        econômico sustentável, considerando os impactos das TICs (Tecnologias da Informação e da
+                        Comunicação) na formulação de políticas públicas e no planejamento urbano, na mobilidade, na
+                        infraestrutura, no saneamento e na preservação do meio ambiente, dentre outros, de modo a
+                        melhorar as condições de renda e de vida para a população do Município de Frutal - MG.
                     </p>
                 </div>
             </div>
 
-            <div class="row gy-2 mt-4 text-center">
-                <div class="col-lg-4 content" data-aos="fade-up" data-aos-delay="100">
+            <div class="row gy-4 mt-4 text-center">
+                <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="100">
                     <h3>Missão</h3>
                     <p>
-                        Promover o desenvolvimento econômico e sustentável de Frutal, por meio de ações que visam a
-                        melhoria da qualidade de vida da população.
+                        Contribuir, através da cooperação, da inovação e do empreendedorismo, com o desenvolvimento
+                        econômico e sustentável de Frutal.
                     </p>
                 </div>
 
-                <div class="col-lg-4 content" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="100">
                     <h3>Visão</h3>
                     <p>
-                        Ser referência no desenvolvimento econômico e sustentável de Frutal, contribuindo para a
-                        construção de uma cidade mais justa e próspera.
+                        Posicionar Frutal como um modelo de cidade moderna, acolhedora, dinâmica e próspera.
                     </p>
                 </div>
 
-                <div class="col-lg-4 content" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="100">
                     <h3>Valores</h3>
-                    <p>
-                        Comprometimento, ética, transparência, inovação, sustentabilidade e responsabilidade social.
-                    </p>
+                    <p>Sustentabilidade: Compromisso com práticas que garantam o equilíbrio ambiental, econômico e
+                        social para as gerações presentes e futuras.</p>
+                    <p>Inovação: Incentivo constante à inovação tecnológica e ao empreendedorismo como motores de
+                        transformação e competitividade.</p>
+                    <p>Colaboração: Fomento à cultura de cooperação entre diferentes atores da sociedade para
+                        construir soluções compartilhadas e efetivas.</p>
+                    <p>Transparência: Gestão transparente e ética, com prestação de contas clara e objetiva a todos
+                        os envolvidos e à população.</p>
+                    <p>Resiliência: Capacidade de adaptação e resposta rápida às mudanças e desafios econômicos,
+                        sociais e ambientais.</p>
+                    <p>Excelência: Busca pela excelência nas iniciativas e projetos, com foco em resultados
+                        significativos para Frutal.</p>
                 </div>
             </div>
         </div>
+        <div class="divider"></div>
     </section><!-- /About Section -->
 
     <!-- Composition Section -->
-    <section id="composicao" class="section light-background">
+    <section id="composicao" class="section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
             <h2>Composição</h2>
@@ -108,6 +117,7 @@
                 </div>
             </div>
         </div>
+        <div class="divider"></div>
     </section><!-- /Composition Section -->
 
     <!-- Techinical Chambers Section -->
@@ -120,10 +130,11 @@
         <div class="container" data-aos="fade-up">
             <x-technical-chambers-section />
         </div>
+        <div class="divider"></div>
     </section><!-- /Techinical Chambers Section -->
 
     <!-- Frutal Section -->
-    <section id="conheca" class="section light-background">
+    <section id="conheca" class="section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
             <h2>Conheça Frutal</h2>
@@ -131,12 +142,13 @@
 
         <div class="container">
             <div class="row gy-2 mt-4 text-center" data-aos="fade-up">
-                <iframe src="https://www.youtube.com/embed/ZI9pIA1Kyu0?si=zy1b5cG57qKGdTx3" title="YouTube video player"
-                    frameborder="0"
+                <iframe class="video" src="https://www.youtube.com/embed/X_Xc36PfIhI?si=7KujPFLxyW1gcadx"
+                    title="YouTube Video Player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
+        <div class="divider"></div>
     </section><!-- /Frutal Section -->
 
     <!-- Projects Section -->
@@ -152,10 +164,11 @@
                 <a href="{{ route('projects') }}" class="btn btn-action">Todos Projetos</a>
             </div>
         </div>
+        <div class="divider"></div>
     </section><!-- /Projects Section -->
 
     <!-- News Section -->
-    <section id="noticias" class="section light-background">
+    <section id="noticias" class="section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
             <h2>Notícias</h2>
@@ -164,6 +177,7 @@
         <div class="container" data-aos="fade-up">
             <x-posts-section />
         </div>
+        <div class="divider"></div>
     </section><!-- /News Section -->
 
     <!-- Partners Section -->
@@ -181,10 +195,11 @@
             <div class="row gy-2 mt-4 text-center">
             </div>
         </div>
+        <div class="divider"></div>
     </section><!-- /Partners Section -->
 
     <!-- Contact Section -->
-    <section id="contato" class="section light-background">
+    <section id="contato" class="section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
             <h2>Contato</h2>
@@ -224,5 +239,6 @@
                     </form>
                 </div>
             </div>
+            <div class="divider"></div>
     </section><!-- /Contact Section -->
 </x-app-layout>
