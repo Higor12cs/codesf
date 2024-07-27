@@ -9,7 +9,11 @@
                     <h4 class="card-title pt-md-0 pt-3">{{ $project->title }}</h4>
                     <span class="text-muted">{{ $project->published_at->diffForHumans() }}</span>
                     <p class="card-text mt-2">{{ strip_tags(substr($project->description, 0, 300)) }}</p>
-                    <a href="{{ route('project', $project) }}" class="ms-auto">Acessar Projeto</a>
+                    @if (!empty($project->url))
+                        <a href="{{ $project->url }}" class="ms-auto" target="_blank">Acessar Projeto</a>
+                    @else
+                        <a href="{{ route('project', $project) }}" class="ms-auto">Acessar Projeto</a>
+                    @endif
                 </div>
 
             </div>

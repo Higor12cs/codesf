@@ -14,6 +14,7 @@ class Project extends Model
         'title',
         'slug',
         'description',
+        'url',
         'is_published',
         'published_at',
         'published_until',

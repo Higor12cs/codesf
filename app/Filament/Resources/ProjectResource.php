@@ -27,7 +27,7 @@ class ProjectResource extends Resource
         return $form
             ->schema([
                 Forms\Components\Fieldset::make('Informações do Projeto')
-                    ->columns(2)
+                    ->columns(3)
                     ->schema([
                         Forms\Components\TextInput::make('title')
                             ->label('Título')
@@ -37,11 +37,15 @@ class ProjectResource extends Resource
                             ->label('Slug')
                             ->required()
                             ->columnSpan(1),
+                        Forms\Components\TextInput::make('url')
+                            ->label('URL')
+                            ->columnSpanFull()
+                            ->columnSpan(1),
                         Forms\Components\FileUpload::make('image')
                             ->label('Imagem')
                             ->required()
                             ->image()
-                            ->columnSpan(2),
+                            ->columnSpan(3),
                     ]),
 
                 Forms\Components\Fieldset::make('Conteúdo')

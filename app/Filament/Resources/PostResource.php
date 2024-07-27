@@ -26,7 +26,7 @@ class PostResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\Fieldset::make('Informações do Projeto')
+                Forms\Components\Fieldset::make('Informações da Notícia')
                     ->columns(3)
                     ->schema([
                         Forms\Components\TextInput::make('title')
