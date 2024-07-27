@@ -176,6 +176,9 @@
 
         <div class="container" data-aos="fade-up">
             <x-posts-section />
+            <div class="d-flex justify-content-center">
+                <a href="{{ route('posts') }}" class="btn btn-action">Todas Notícias</a>
+            </div>
         </div>
         <div class="divider"></div>
     </section><!-- /News Section -->

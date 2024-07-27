@@ -9,7 +9,11 @@
                     <h4 class="card-title pt-md-0 pt-3">{{ $post->title }}</h4>
                     <span class="text-muted">{{ $post->published_at?->diffForHumans() }}</span>
                     <p class="card-text mt-2">{!! $post->description !!}</p>
-                    <a href="{{ $post->url }}" class="ms-auto" target="_blank">Acessar Notícia</a>
+                    @if (!empty($post->url))
+                        <a href="{{ $post->url }}" class="ms-auto" target="_blank">Acessar Notícia</a>
+                    @else
+                        <a href="{{ route('post', $post) }}" class="ms-auto">Acessar Notícia</a>
+                    @endif
                 </div>
 
             </div>

@@ -1,5 +1,5 @@
 <x-app-layout :title="$post->title">
-    <!-- Post Section -->
+    <!-- Project Section -->
     <section class="section" style="min-height: 75vh; padding: 140px 0 0 0;">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
@@ -9,5 +9,5 @@
         <div class="container" data-aos="fade-up">
             {!! $post->description !!}
         </div>
-    </section><!-- /Post Section -->
+    </section><!-- /Project Section -->
 </x-app-layout>

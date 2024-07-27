@@ -26,32 +26,52 @@ class PostResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('title')
-                    ->label('Título')
-                    ->required()
-                    ->columnSpanFull(),
-                Forms\Components\FileUpload::make('image')
-                    ->label('Imagem')
-                    ->image()
-                    ->required()
-                    ->columnSpanFull(),
-                Forms\Components\Textarea::make('description')
-                    ->label('Descrição')
-                    ->columnSpanFull(),
-                Forms\Components\TextInput::make('url')
-                    ->label('URL')
-                    ->columnSpanFull(),
-                Forms\Components\Toggle::make('is_published')
-                    ->label('Publicado')
-                    ->required()
-                    ->default(true)
-                    ->columnSpanFull(),
-                Forms\Components\DateTimePicker::make('published_at')
-                    ->label('Publicado Em')
-                    ->default(now()),
-                Forms\Components\DateTimePicker::make('published_until')
-                    ->label('Publicado Até')
-                    ->nullable(),
+                Forms\Components\Fieldset::make('Informações do Projeto')
+                    ->columns(3)
+                    ->schema([
+                        Forms\Components\TextInput::make('title')
+                            ->label('Título')
+                            ->required()
+                            ->columnSpan(1),
+                        Forms\Components\TextInput::make('slug')
+                            ->label('Slug')
+                            ->required()
+                            ->columnSpan(1),
+                        Forms\Components\TextInput::make('url')
+                            ->label('URL')
+                            ->columnSpanFull()
+                            ->columnSpan(1),
+                        Forms\Components\FileUpload::make('image')
+                            ->label('Imagem')
+                            ->required()
+                            ->image()
+                            ->columnSpan(3),
+                    ]),
+
+                Forms\Components\Fieldset::make('Conteúdo')
+                    ->schema([
+                        Forms\Components\RichEditor::make('description')
+                            ->label('Conteúdo')
+                            ->required()
+                            ->columnSpanFull(),
+                    ]),
+
+                Forms\Components\Fieldset::make('Publicação')
+                    ->columns(2)
+                    ->schema([
+                        Forms\Components\DateTimePicker::make('published_at')
+                            ->label('Publicado em')
+                            ->default(now())
+                            ->columnSpan(1),
+                        Forms\Components\DateTimePicker::make('published_until')
+                            ->label('Publicado até')
+                            ->columnSpan(1),
+                        Forms\Components\Toggle::make('is_published')
+                            ->label('Publicado')
+                            ->required()
+                            ->default(true)
+                            ->columnSpanFull(),
+                    ]),
             ]);
     }
 
@@ -104,7 +124,9 @@ class PostResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ManagePosts::route('/'),
+            'index' => Pages\ListPosts::route('/'),
+            'create' => Pages\CreatePost::route('/create'),
+            'edit' => Pages\EditPost::route('/{record}/edit'),
         ];
     }
 }
