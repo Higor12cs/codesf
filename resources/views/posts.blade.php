@@ -13,10 +13,12 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <img src="/storage/{{ $post->image }}" class="img-fluid"
-                                    alt="Notícia {{ $loop->index }}">
+                                    alt="Notícia {{ $post->title }}">
                             </div>
                             <div class="col-md-9">
-                                <h4 class="card-title pt-md-0 pt-3">{{ $post->title }}</h4>
+                                <a href="{{ route('post', $post) }}">
+                                    <h4 class="card-title pt-md-0 pt-3">{{ $post->title }}</h4>
+                                </a>
                                 <span class="text-muted">{{ $post->published_at->diffForHumans() }}</span>
                                 <p class="card-text mt-2">{{ strip_tags(substr($post->description, 0, 300)) }}
                                 </p>

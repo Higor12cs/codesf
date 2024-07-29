@@ -1,4 +1,4 @@
-<header id="header" class="header d-flex align-items-center bg-light" style="position: absolute; width: 100%">
+<header id="header" class="header d-flex align-items-center" style="position: absolute; width: 100%">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
         <a href="{{ route('home') }}" class="logo d-flex align-items-center me-auto">
             <img src="{{ asset('img/logo.png') }}" alt="" />
